@@ -8,7 +8,7 @@ describe('Blockchain', () => {
     blockchain = new Blockchain();
   });
 
-  it('every blockchain has a genesis blockchain', () => {
+  it('every blockchain tiene un bloque genesis', () => {
     const [genesisBlock] = blockchain.blocks;
 
     expect(genesisBlock).toEqual(Block.genesis);
